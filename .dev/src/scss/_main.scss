@@ -5,7 +5,7 @@
 
 .button {
 	@include button;
-
+	color: $cinza-09;
 	background: $amarelo;
 	padding: 24px 32px;
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.06);
@@ -19,6 +19,7 @@
 	display: flex;
 	align-items: center;
 	transition: all 0.2s ease-in;
+	text-decoration: none;
 	&:after {
 		content: url("../assets/seta.svg");
 		position: absolute;
@@ -28,6 +29,7 @@
 	}
 	&:hover {
 		padding-right: 42px;
+		color: $cinza-09;
 		&:after {
 			right: 15px;
 			opacity: 1;
@@ -39,7 +41,14 @@
 		background: transparent;
 		position: relative;
 		padding: 0px;
+		display: flex;
+		align-items: center;
+		img {
+			margin-right: 10px;
+			transform: rotate(-180deg);
+		}
 		color: $cinza-10;
+		@include option-text;
 		&:before {
 			position: absolute;
 			content: "";
@@ -47,7 +56,7 @@
 			width: 0;
 			background-color: $cinza-10;
 			transition: ease-out 0.3s all;
-			bottom: -3px;
+			bottom: 1px;
 		}
 		&:hover {
 			&::before {
@@ -135,8 +144,6 @@
 .questions {
 	&__container {
 		display: none;
-		position: absolute;
-		top: 80px;
 	}
 	&__item {
 		margin-bottom: 48px;
@@ -221,6 +228,34 @@
 			&.active {
 				background: $amarelo;
 			}
+		}
+	}
+}
+
+.results {
+	display: none;
+	.holder__btn {
+		text-align: start;
+		justify-content: start;
+	}
+	&__title {
+		@include option;
+		color: $amarelo;
+		margin: 0;
+		margin-bottom: 24px;
+	}
+	&__desc {
+		margin-bottom: 48px;
+		margin-top: 0px;
+		color: $cinza-09;
+
+		@include paragraph-end;
+		b {
+			@include paragraph-end-bold;
+		}
+		a {
+			color: $cinza-09;
+			@include paragraph-end-bold;
 		}
 	}
 }
