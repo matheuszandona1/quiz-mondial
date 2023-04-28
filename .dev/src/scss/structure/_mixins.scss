@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@600&family=Inter:wght@400;700;900&family=Montserrat:wght@500;600;700&display=swap");
+
+@mixin big-title {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 57px;
+}
+@mixin second-big-title {
+	font-family: "Epilogue", sans-serif;
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 57px;
+}
+
+@mixin paragraph {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: $cinza-09;
+}
+@mixin paragraph-end {
+	font-family: "Inter", sans-serif;
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 400;
+}
+@mixin paragraph-end-bold {
+	font-family: "Inter", sans-serif;
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 700;
+}
+
+@mixin option {
+	font-family: "Inter", sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+}
+@mixin option-text {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+}
+@mixin question {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 39px;
+}
+@mixin question-bold {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+}
+
+@mixin button {
+	font-family: "Inter", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+}

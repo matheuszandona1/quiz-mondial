@@ -1,60 +1,55 @@
 @mixin media($size) {
 	@if $size ==s {
-	  @media only screen and (max-width: 479px) {
-		@content;
-	  }
+		@media only screen and (max-width: 479px) {
+			@content;
+		}
+	} @else if $size ==m {
+		@media only screen and (min-width: 768px) and (max-width: 959px) {
+			@content;
+		}
+	} @else if $size ==ml {
+		@media only screen and (min-width: 768px) {
+			@content;
+		}
+	} @else if $size ==l {
+		@media only screen and (min-width: 959px) {
+			@content;
+		}
 	}
-  
-	@else if $size ==m {
-	  @media only screen and (min-width: 768px) and (max-width: 959px) {
-		@content;
-	  }
-	}
-  
-	@else if $size ==ml {
-	  @media only screen and (min-width: 768px) {
-		@content;
-	  }
-	}
-  
-	@else if $size ==l {
-	  @media only screen and (min-width: 959px) {
-		@content;
-	  }
-	}
-  }
-  
-  @function vwcalc($px) {
+}
+
+@function vwcalc($px) {
 	$rem: 14;
-	@return calc(#{ calc($px / $rem) }rem + 0.01vw);
-  }
-  
-  
-  $cols:12;
-  $gutter:24px;
-  $container:1240px;
-  
-  @function grid($col, $offset: false){
+	@return calc(#{calc($px / $rem)}rem + 0.01vw);
+}
+
+$cols: 12;
+$gutter: 24px;
+$container: 1240px;
+
+@function grid($col, $offset: false) {
 	$width: calc($col/$cols) * 100%;
 	$result: calc(#{$width} - #{$gutter});
-	@if $offset == offset{
-	  $gutter: $gutter / 2;
-	  $result: calc(#{$width} + #{$gutter});
+	@if $offset == offset {
+		$gutter: $gutter / 2;
+		$result: calc(#{$width} + #{$gutter});
 	}
 	@return $result;
-  }
-  
-  @for $i from 1 through $cols {
-	.grid-#{$i}{
-	  width: grid($i);
+}
+
+@for $i from 1 through $cols {
+	.grid-#{$i} {
+		width: grid($i);
 	}
-  }
-  .container-grid{
+}
+.container-grid {
 	max-width: $container;
 	margin: 0 auto;
 	display: flex;
 	gap: 24px;
 	justify-content: center;
-	flex-wrap: wrap;
-	padding: 100px 0px;
-  }
+}
+.container-default {
+	max-width: $container;
+	margin: 0 auto;
+}

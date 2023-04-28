@@ -1,0 +1,226 @@
+.container-default {
+	padding: 80px 0px;
+	position: relative;
+}
+
+.button {
+	@include button;
+
+	background: $amarelo;
+	padding: 24px 32px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.06);
+	border-radius: 8px;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	display: block;
+	margin-right: 0px;
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	align-items: center;
+	transition: all 0.2s ease-in;
+	&:after {
+		content: url("../assets/seta.svg");
+		position: absolute;
+		right: 0;
+		opacity: 0;
+		transition: all 0.3s ease;
+	}
+	&:hover {
+		padding-right: 42px;
+		&:after {
+			right: 15px;
+			opacity: 1;
+		}
+	}
+	&-underlined {
+		text-transform: uppercase;
+		border: none;
+		background: transparent;
+		position: relative;
+		padding: 0px;
+		color: $cinza-10;
+		&:before {
+			position: absolute;
+			content: "";
+			height: 1px;
+			width: 0;
+			background-color: $cinza-10;
+			transition: ease-out 0.3s all;
+			bottom: -3px;
+		}
+		&:hover {
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.header {
+	background: #fcb81421;
+	padding: 39px 0px;
+	* {
+		padding: 0;
+	}
+	.navbar-collapse {
+		flex-grow: unset;
+	}
+	.container-fluid {
+		width: 100%;
+		padding: 0;
+		@include media(s) {
+			justify-content: space-around;
+		}
+	}
+	.navbar-expand-lg {
+		justify-content: space-between;
+		width: 100%;
+		padding: 0;
+	}
+	.navbar-nav {
+		gap: 24px;
+		@include media(s) {
+			margin-top: 50px;
+			flex-direction: row;
+			justify-content: center;
+		}
+	}
+	.nav-item {
+		width: 42px;
+		height: 42px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.navbar-toggler {
+		outline: none;
+		&:focus {
+			outline: none;
+			border: none;
+			appearance: none;
+		}
+	}
+}
+
+.holder {
+	&__infos {
+		padding-top: 80px;
+	}
+	&__title {
+		@include big-title;
+		color: $cinza-12;
+		span {
+			color: $amarelo;
+			@include second-big-title;
+		}
+	}
+	&__text {
+		@include paragraph;
+		text-align: right;
+		margin-bottom: 48px;
+	}
+	&__btn {
+		text-align: right;
+		display: flex;
+		justify-content: end;
+	}
+	&__img {
+		img {
+			transform: scale(0.8);
+		}
+	}
+}
+
+.questions {
+	&__container {
+		display: none;
+		position: absolute;
+		top: 80px;
+	}
+	&__item {
+		margin-bottom: 48px;
+	}
+	&__number {
+		font-size: 40px;
+		line-height: 48px;
+		color: $amarelo;
+		font-weight: 900;
+		font-family: "Inter", sans-serif;
+		margin-bottom: 24px;
+	}
+
+	&__title {
+		@include question;
+		margin-bottom: 48px;
+		color: $cinza-09;
+		b {
+			@include question-bold;
+		}
+	}
+	&__list {
+		list-style: none;
+		padding: 0;
+		gap: 12px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__option {
+		gap: 24px;
+		padding: 16px;
+		background: #ffffff;
+		align-items: center;
+		border: 1px solid #3d3d3d;
+		border-radius: 12px;
+		height: 98px;
+		width: 100%;
+		transition: all 0.2s ease-in;
+		.alternativa {
+			padding: 14px 21px 13px;
+			transition: all 0.2s ease-in;
+			background: $cinza-01;
+			border-radius: 8px;
+			color: $cinza-09;
+			@include question-bold;
+			text-transform: uppercase;
+		}
+		.texto {
+			margin: 0;
+			@include paragraph;
+			text-align: left;
+		}
+		&:hover {
+			background: rgba(252, 184, 20, 0.13);
+			.alternativa {
+				background: $amarelo;
+			}
+		}
+	}
+	&__img {
+		img {
+			transform: scale(0.8);
+		}
+	}
+}
+
+.pagination {
+	display: flex;
+	gap: 48px;
+	align-items: center;
+	&__list {
+		list-style: none;
+		padding: 0px;
+		gap: 8px;
+		margin: 0px;
+		display: flex;
+		li {
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background: $cinza-01;
+			&.active {
+				background: $amarelo;
+			}
+		}
+	}
+}
