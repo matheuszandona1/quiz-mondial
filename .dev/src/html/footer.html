@@ -31,6 +31,10 @@
     steps--
     showCurrentStep()
   })
+  $('.button-reset #reset').click(function () {
+    console.log("eh o testas")
+    resetSteps();
+  })
 
   removeCurrentStep = function () {
     $(`#question-${steps}`).hide()
@@ -38,7 +42,11 @@
   showCurrentStep = function () {
     $(`#question-${steps}`).fadeIn().css("display", "flex")
   }
-  resetSteps = function () { }
+  resetSteps = function () {
+    removeCurrentStep()
+    $(`#question-1`).fadeIn().css("display", "flex")
+    steps = 1
+  }
 
   showResults = function (id) {
     $(".results").show()
