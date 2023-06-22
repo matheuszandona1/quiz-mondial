@@ -7,16 +7,16 @@
 		<section class="container-default" id="">
 			<div class="holder container-grid" id="startPage">
 				<div class="holder__img">
-					<img src="./assets/img-ini.png" alt="">
+					<img src="./assets/img-ini.png" alt="" />
 				</div>
 				<div class="holder__infos">
-					<h 1 class="holder__title">Qual prato você <br>vai levar pra <br><b>Festa Junina?</b></h>
+					<h 1 class="holder__title">Qual prato você <br />vai levar pra <br /><b>Festa Junina?</b></h>
 					<p class="holder__text">
-						🎉🌽 Bem-vindo à <b>Festa Junina do Receitas Mondial!</b> 🌽🎉
-						<br><br>
-						Ei, você aí! Sabe o que combina com fogueira, danças e trajes caipiras? Deliciosas comidas típicas de festa
-						junina, é claro! Se você é como a gente e acredita que a comida é o coração de qualquer celebração, então
-						este quiz é feito para você!
+						🎉🌽 Bem-vindo à <b>Festa Junina do Receitas Mondial!</b> 🌽🎉 <br /><br />
+						Ei, você aí! Sabe o que combina com fogueira, danças e trajes caipiras? Deliciosas comidas típicas de festa junina, é claro! Se você é como a gente
+						e acredita que a comida é o coração de qualquer celebração, então este quiz é feito para você!
+					</p>
+
 					<div class="holder__btn">
 						<buttton class="button" id="startBtn">responda agora</buttton>
 					</div>
@@ -27,24 +27,35 @@
 					<div class="questions__holder">
 						<div class="questions__item">
 							<h3 class="questions__number">01</h3>
-							<h2 class="questions__title">Na <b>rotina matinal,</b> a sua mãe é a pessoa que:</h2>
+							<h2 class="questions__title">
+								Se o <b>açúcar</b> fosse um super-herói, <br />
+								você seria o maior fã?
+							</h2>
 							<ul class="questions__list">
-								<li><button class="d-flex questions__option">
+								<li>
+									<button class="d-flex questions__option" id="first">
 										<div class="alternativa">a</div>
-										<p class="texto">Gosta de um café da manhã reforçado, com tudo que tem direito</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Sim! Quero um autógrafo de cada grão de açúcar!</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
 										<div class="alternativa">b</div>
-										<p class="texto">Deixa a TV ligada enquanto prepara o café da manhã</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Gosto do herói, mas não sou obcecado.</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
 										<div class="alternativa">c</div>
-										<p class="texto">Acorda já falando do churrasco que vai acontecer no domingo</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Na verdade, sou mais do time dos salgados.</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
 										<div class="alternativa">d</div>
-										<p class="texto">Prepara sucos e suplementos para começar o dia com energia</p>
-									</button></li>
+										<p class="texto">O açúcar e eu... somos mais como colegas distantes.</p>
+									</button>
+								</li>
 							</ul>
 						</div>
 						<div class="pagination">
@@ -63,36 +74,43 @@
 							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
 						</div>
 					</div>
-					<div class="questions__img"><img src="./assets/Image-9.png" alt=""></div>
+					<div class="questions__img"><img src="./assets/Image-9.png" alt="" /></div>
 				</div>
 				<div class="questions__container container-grid" id="question-2">
 					<div class="questions__holder">
 						<div class="questions__item">
 							<h3 class="questions__number">02</h3>
-							<h2 class="questions__title">No <b>
-									final de semana,</b> qual atividade tem mais a ver com a personalidade da sua mãe?</h2>
+							<h2 class="questions__title">Em uma festa junina, você é <b>como um imã</b> para...</h2>
 							<ul class="questions__list">
-								<li><button class="d-flex questions__option">
+								<li>
+									<button class="d-flex questions__option" id="first">
 										<div class="alternativa">a</div>
-										<p class="texto">Passar horas planejando e preparando receitas</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Dança - sou praticamente um Michael Jackson do forró!</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
 										<div class="alternativa">b</div>
-										<p class="texto">Maratonar novela, série ou filmes</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Música - se tem um batuque, faço parte dele.</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
 										<div class="alternativa">c</div>
-										<p class="texto">Organizar um churrasco em família e amigos</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Fogueira - amo ficar batendo papo ao redor da fogueira de Festa Junina, ainda mais nesse friozinho!</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
 										<div class="alternativa">d</div>
-										<p class="texto">Sair para correr ao ar livre ou preparar receitas saudáveis</p>
-									</button></li>
+										<p class="texto">Comida - se não tem comida, pra mim não é festa!</p>
+									</button>
+								</li>
 							</ul>
 						</div>
 						<div class="pagination">
-							<div class="button-reset" id="prev"><button class="button-underlined"><img src="./assets/seta.svg" alt="">
-									voltar</button>
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
 							</div>
 							<ul class="pagination__list">
 								<li class="active"></li>
@@ -109,35 +127,43 @@
 							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
 						</div>
 					</div>
-					<div class="questions__img"><img src="./assets/Image-8.png" alt=""></div>
+					<div class="questions__img"><img src="./assets/Image-8.png" alt="" /></div>
 				</div>
 				<div class="questions__container container-grid" id="question-3">
 					<div class="questions__holder">
 						<div class="questions__item">
 							<h3 class="questions__number">03</h3>
-							<h2 class="questions__title">Com <b>qual comidinha</b> a sua mãe receberia uma visita em casa?</h2>
+							<h2 class="questions__title">No mundo dos sabores, você seria o <b>embaixador</b> de...</h2>
 							<ul class="questions__list">
-								<li><button class="d-flex questions__option">
+								<li>
+									<button class="d-flex questions__option" id="first">
 										<div class="alternativa">a</div>
-										<p class="texto">Petiscos e pratos quentes para compartilhar com todo mundo</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Agridoces - porque a vida precisa de equilíbrio, né?</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
 										<div class="alternativa">b</div>
-										<p class="texto">Pipocas e outros snacks para beliscar</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Salgados - Viva o Rei Salgado!</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
 										<div class="alternativa">c</div>
-										<p class="texto">Carnes e acompanhamentos para um churrasco</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Doces - açúcar é meu nome do meio.</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
 										<div class="alternativa">d</div>
-										<p class="texto">Salada de frutas, sucos naturais ou outra opção saudável</p>
-									</button></li>
+										<p class="texto">Picantes - sempre pronto para uma aventura culinária apimentada!</p>
+									</button>
+								</li>
 							</ul>
 						</div>
 						<div class="pagination">
-							<div class="button-reset" id="prev"><button class="button-underlined"><img src="./assets/seta.svg" alt="">
-									voltar</button>
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
 							</div>
 							<ul class="pagination__list">
 								<li class="active"></li>
@@ -154,35 +180,43 @@
 							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
 						</div>
 					</div>
-					<div class="questions__img"><img src="./assets/Image-7.png" alt=""></div>
+					<div class="questions__img"><img src="./assets/Image-7.png" alt="" /></div>
 				</div>
 				<div class="questions__container container-grid" id="question-4">
 					<div class="questions__holder">
 						<div class="questions__item">
 							<h3 class="questions__number">04</h3>
-							<h2 class="questions__title">Qual <b>palavra</b> abaixo melhor descreve a sua mãe?</h2>
+							<h2 class="questions__title">Na cozinha, você é <b>famoso(a) por fazer...</b></h2>
 							<ul class="questions__list">
-								<li><button class="d-flex questions__option">
+								<li>
+									<button class="d-flex questions__option" id="first">
 										<div class="alternativa">a</div>
-										<p class="texto">Companhia</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Pratos quentes que abraçam a alma.</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
 										<div class="alternativa">b</div>
-										<p class="texto">Conforto</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Pratos frios que fazem pinguins pedirem bis.</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
 										<div class="alternativa">c</div>
-										<p class="texto">Confraternização</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Sobremesas que fariam Willy Wonka aplaudir.</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
 										<div class="alternativa">d</div>
-										<p class="texto">Saúde</p>
-									</button></li>
+										<p class="texto">Salgadinhos que desaparecem antes de chegar à mesa.</p>
+									</button>
+								</li>
 							</ul>
 						</div>
 						<div class="pagination">
-							<div class="button-reset" id="prev"><button class="button-underlined"><img src="./assets/seta.svg" alt="">
-									voltar</button>
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
 							</div>
 							<ul class="pagination__list">
 								<li class="active"></li>
@@ -199,36 +233,43 @@
 							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
 						</div>
 					</div>
-					<div class="questions__img"><img src="./assets/Image-6.png" alt=""></div>
+					<div class="questions__img"><img src="./assets/Image-6.png" alt="" /></div>
 				</div>
 				<div class="questions__container container-grid" id="question-5">
 					<div class="questions__holder">
 						<div class="questions__item">
 							<h3 class="questions__number">05</h3>
-							<h2 class="questions__title">Sua mãe pode escolher <b>uma frase</b> para ter estampada na caneca. Qual
-								dessas frases ela escolheria?</h2>
+							<h2 class="questions__title">Em uma escala de miojo a chef, suas <b>habilidades na cozinha</b> são...</h2>
 							<ul class="questions__list">
-								<li><button class="d-flex questions__option">
+								<li>
+									<button class="d-flex questions__option" id="first">
 										<div class="alternativa">a</div>
-										<p class="texto">"Você merecia o mundo, mas só tive dinheiro pra uma caneca."</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Estou quase ganhando meu próprio programa de culinária!</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
 										<div class="alternativa">b</div>
-										<p class="texto">“Eu + frio = filme e pipoca”</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Quando estou inspirado(a), faço uns pratos que impressionam, devo confessar.</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
 										<div class="alternativa">c</div>
-										<p class="texto">"Que nunca nos falte churrasco e cerveja!"</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Com uma receita e a AirFryer da Mondial, me viro bem!</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
 										<div class="alternativa">d</div>
-										<p class="texto">"Não tá fácil a vida da patricinha fitness!"</p>
-									</button></li>
+										<p class="texto">Eu sou tipo um crítico de culinária, especialista em provar. Já fazer, não é muito comigo.</p>
+									</button>
+								</li>
 							</ul>
 						</div>
 						<div class="pagination">
-							<div class="button-reset" id="prev"><button class="button-underlined"><img src="./assets/seta.svg" alt="">
-									voltar</button>
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
 							</div>
 							<ul class="pagination__list">
 								<li class="active"></li>
@@ -245,35 +286,43 @@
 							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
 						</div>
 					</div>
-					<div class="questions__img"><img src="./assets/Image-5.png" alt=""></div>
+					<div class="questions__img"><img src="./assets/Image-5.png" alt="" /></div>
 				</div>
 				<div class="questions__container container-grid" id="question-6">
 					<div class="questions__holder">
 						<div class="questions__item">
 							<h3 class="questions__number">06</h3>
-							<h2 class="questions__title">Qual desses <b>pratos</b> é o favorito da sua mãe?</h2>
+							<h2 class="questions__title">O seu e <b>esquadrão festa junina</b> é composto por...</h2>
 							<ul class="questions__list">
-								<li><button class="d-flex questions__option">
+								<li>
+									<button class="d-flex questions__option" id="first">
 										<div class="alternativa">a</div>
-										<p class="texto">Frango frito crocante</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Minha família - nós levamos festa junina a sério.</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
 										<div class="alternativa">b</div>
-										<p class="texto">Pipoca quentinha</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Meus amigos - com eles é festa garantida.</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
 										<div class="alternativa">c</div>
-										<p class="texto">Carne assada suculenta</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Meu parceiro/a - melhor companhia não há.</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
 										<div class="alternativa">d</div>
-										<p class="texto">Salada de frutas refrescantes e variadas</p>
-									</button></li>
+										<p class="texto">Eu, eu mesmo e eu - sou a festa ambulante!</p>
+									</button>
+								</li>
 							</ul>
 						</div>
 						<div class="pagination">
 							<div class="button-reset" id="prev">
-								<button class="button-underlined"><img src="./assets/seta.svg" alt=""> voltar</button>
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
 							</div>
 							<ul class="pagination__list">
 								<li class="active"></li>
@@ -290,37 +339,43 @@
 							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
 						</div>
 					</div>
-					<div class="questions__img"><img src="./assets/Image-4.png " alt=""></div>
+					<div class="questions__img"><img src="./assets/Image-4.png " alt="" /></div>
 				</div>
 				<div class="questions__container container-grid" id="question-7">
 					<div class="questions__holder">
 						<div class="questions__item">
 							<h3 class="questions__number">07</h3>
-							<h2 class="questions__title">O que a sua mãe mais gosta de <b>
-									fazer no verão?
-								</b></h2>
+							<h2 class="questions__title">Festa junina <b>sem música</b> é como...</h2>
 							<ul class="questions__list">
-								<li><button class="d-flex questions__option">
+								<li>
+									<button class="d-flex questions__option" id="first">
 										<div class="alternativa">a</div>
-										<p class="texto">Preparar pratos frescos e leves para a família</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Pizza sem queijo, tem que ter forró pé-de-serra!</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
 										<div class="alternativa">b</div>
-										<p class="texto">Usar o climatizador para se refrescar</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Pastel sem recheio, me dá um sertanejo universitário aí!</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
 										<div class="alternativa">c</div>
-										<p class="texto">Fazer um churrasco com os amigos no quintal</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
+										<p class="texto">Bolo sem cobertura, onde estão os clássicos do forró?</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
 										<div class="alternativa">d</div>
-										<p class="texto">Preparar sucos e outras receitas com alimentos naturais</p>
-									</button></li>
+										<p class="texto">Café sem açúcar, precisa de uma mistura animada!</p>
+									</button>
+								</li>
 							</ul>
 						</div>
 						<div class="pagination">
-							<div class="button-reset" id="prev"><button class="button-underlined"><img src="./assets/seta.svg" alt="">
-									voltar</button>
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
 							</div>
 							<ul class="pagination__list">
 								<li class="active"></li>
@@ -337,148 +392,7 @@
 							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
 						</div>
 					</div>
-					<div class="questions__img"><img src="./assets/Image-3.png" alt=""></div>
-				</div>
-				<div class="questions__container container-grid" id="question-8">
-					<div class="questions__holder">
-						<div class="questions__item">
-							<h3 class="questions__number">08</h3>
-							<h2 class="questions__title">Qual dessas frases você acha que a
-								<b> sua mãe poderia ter dito?</b>
-							</h2>
-							<ul class="questions__list">
-								<li><button class="d-flex questions__option">
-										<div class="alternativa">a</div>
-										<p class="texto">“Apressado come cru!”</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
-										<div class="alternativa">b</div>
-										<p class="texto">"Fica o dia inteiro olhando esse celular"</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
-										<div class="alternativa">c</div>
-										<p class="texto">"Não me leve a sério, me leve para um churrasco!"</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
-										<div class="alternativa">d</div>
-										<p class="texto">"Só come besteira! Cadê uma verdura, um legume, uma fruta?"</p>
-									</button></li>
-							</ul>
-						</div>
-						<div class="pagination">
-							<div class="button-reset" id="prev"><button class="button-underlined"><img src="./assets/seta.svg" alt="">
-									voltar</button>
-							</div>
-							<ul class="pagination__list">
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li></li>
-								<li></li>
-							</ul>
-							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
-						</div>
-					</div>
-					<div class="questions__img"><img src="./assets/Image-2.png" alt=""></div>
-				</div>
-				<div class="questions__container container-grid" id="question-9">
-					<div class="questions__holder">
-						<div class="questions__item">
-							<h3 class="questions__number">09</h3>
-							<h2 class="questions__title">Qual é a <b> maior preocupação</b> da sua mãe em relação à alimentação?</b>
-							</h2>
-							<ul class="questions__list">
-								<li><button class="d-flex questions__option">
-										<div class="alternativa">a</div>
-										<p class="texto">Garantir que todos tenham uma refeição farta e deliciosa</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
-										<div class="alternativa">b</div>
-										<p class="texto">Equilibrar o consumo de snacks e petiscos com refeições saudáveis</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
-										<div class="alternativa">c</div>
-										<p class="texto">Ter opções de carne e acompanhamentos para o almoço</p>
-									</button></li>
-								<li><button class="d-flex questions__option">
-										<div class="alternativa">d</div>
-										<p class="texto">Preparar saladas e porções de frutas sempre que possível</p>
-									</button></li>
-							</ul>
-						</div>
-						<div class="pagination">
-							<div class="button-reset" id="prev"><button class="button-underlined"><img src="./assets/seta.svg" alt="">
-									voltar</button>
-							</div>
-							<ul class="pagination__list">
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li></li>
-							</ul>
-							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
-						</div>
-					</div>
-					<div class="questions__img"><img src="./assets/Image-1.png" alt=""></div>
-				</div>
-				<div class="questions__container container-grid" id="question-10">
-					<div class="questions__holder">
-						<div class="questions__item">
-							<h3 class="questions__number">10</h3>
-							<h2 class="questions__title">Sua mãe entrou na <b>Mondial</b> e agora pode levar para casa apenas um
-								eletrodoméstico da loja. Qual ela levaria sem pensar duas vezes?
-							</h2>
-							<ul class="questions__list">
-								<li><button class="d-flex questions__option" id="airFryer">
-										<div class="alternativa">a</div>
-										<p class="texto">Air Fryer</p>
-									</button></li>
-								<li><button class="d-flex questions__option" id="pipoqueira">
-										<div class="alternativa">b</div>
-										<p class="texto">Pipoqueira</p>
-									</button></li>
-								<li><button class="d-flex questions__option" id="churrasqueira">
-										<div class="alternativa">c</div>
-										<p class="texto">Churrasqueira</p>
-									</button></li>
-								<li><button class="d-flex questions__option" id="liquidificador">
-										<div class="alternativa">d</div>
-										<p class="texto">Multiprocessador</p>
-									</button></li>
-							</ul>
-						</div>
-						<div class="pagination">
-							<div class="button-reset" id="prev"><button class="button-underlined"><img src="./assets/seta.svg" alt="">
-									voltar</button>
-							</div>
-							<ul class="pagination__list">
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-								<li class="active"></li>
-							</ul>
-							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button>
-							</div>
-						</div>
-					</div>
-					<div class="questions__img"><img src="./assets/Image.png" alt=""></div>
+					<div class="questions__img"><img src="./assets/Image-3.png" alt="" /></div>
 				</div>
 			</div>
 			<div class="results" id="results">
@@ -491,23 +405,18 @@
 						</div>
 					</div>
 					<div class="results__img">
-						<img src="#" alt="">
+						<img src="#" alt="" />
 					</div>
 				</div>
 			</div>
 		</section>
-		<div class="data" style="display: none;">
-			<img src="./assets/aroz-doce.png" alt="">
-			<img src="./assets/canjica.png" alt="">
-			<img src="./assets/pamonha.png" alt="">
-			<img src="./assets/milho.png" alt="">
-
+		<div class="data" style="display: none">
+			<img src="./assets/aroz-doce.png" alt="" />
+			<img src="./assets/canjica.png" alt="" />
+			<img src="./assets/pamonha.png" alt="" />
+			<img src="./assets/milho.png" alt="" />
 		</div>
 	</main>
 
-
-
 	<include src="./html/footer.html"></include>
 </body>
-
-</html>

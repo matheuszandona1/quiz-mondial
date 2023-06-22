@@ -119,6 +119,9 @@
 .holder {
 	&__infos {
 		padding-top: 80px;
+		display: flex;
+		flex-direction: column;
+
 		@include media(s) {
 			padding-top: 0px;
 		}
