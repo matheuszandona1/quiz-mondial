@@ -43,9 +43,9 @@ showResults = function (id) {
 
 dados = {
 	airFryer: {
-		titulo: "Air Fryer Forno de 12 L Mondial",
-		imagem: "/res/img/assets/img_1.png",
-		desc: "Sua mãe provavelmente adora preparar refeições abundantes para toda a família! O presente ideal para ela pode ser uma <b> Air Fryer Forno de 12 L da Mondial,</b> que ajudará na preparação de porções maiores de pratos crocantes de forma mais saudável, além de cesto e de assadeiras<br><br>Outros eletrodomésticos que comportem quantidades maiores de alimentos podem ser opções ideais para ela, como forno elétrico, panela de pressão elétrica e batedeira planetária com tigela de 4,5L.",
+		titulo: "Canjica",
+		imagem: "/res/img/assets/canjica.png",
+		desc: "Você é uma pessoa doce e acolhedora, assim como um belo prato de canjica! Com a panela elétrica da Mondial, você pode preparar uma canjica perfeita sem muito esforço e ainda surpreender todos na festa junina. <br><br>E que tal considerar uma canjica diferente? Veja nossa receita de Canjica Salgada com Calabresa e surpreenda os convidados!",
 	},
 	pipoqueira: {
 		titulo: "Pipoqueira Elétrica Mondial",
